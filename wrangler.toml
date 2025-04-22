@@ -3,6 +3,11 @@ main = "workers-site/index.js"
 compatibility_date = "2023-04-23"
 workers_dev = true
 
+routes = [
+  { pattern = "zontromontro.com", custom_domain = true },
+  { pattern = "www.zontromontro.com", custom_domain = true }
+]
+
 [site]
 bucket = "."
 include = ["index.html", "style.css", "script.js"]
