@@ -1,0 +1,9 @@
+name = "zontromontro-landing"
+main = "workers-site/index.js"
+compatibility_date = "2023-04-23"
+workers_dev = true
+
+[site]
+bucket = "."
+include = ["index.html", "style.css", "script.js"]
+exclude = ["node_modules", "workers-site", "package.json", "package-lock.json", "wrangler.toml"]
