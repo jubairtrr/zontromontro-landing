@@ -10,5 +10,21 @@ routes = [
 
 [site]
 bucket = "."
-include = ["index.html", "style.css", "script.js"]
-exclude = ["node_modules", "workers-site", "package.json", "package-lock.json", "wrangler.toml"]
+include = [
+  "*.html",
+  "*.css", 
+  "*.js",
+  "Abstract Arts/**/*",
+  "Logo/**/*"
+]
+exclude = [
+  "node_modules", 
+  "workers-site", 
+  "package.json", 
+  "package-lock.json", 
+  "wrangler.toml",
+  ".git",
+  ".gitignore",
+  "Design_Reference",
+  "v1.zip"
+]
