@@ -1,68 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZontroMontro - Coming Soon</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zontrmontro - Weekend Learning for Kids</title>
+    <link rel="icon" type="image/png" href="Logo/English Logo Png.png">
+    <link rel="apple-touch-icon" href="Logo/English Logo Png.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="logo">ZontroMontro</div>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="Logo/English Logo Png.png" alt="Zontrmontro Logo" class="logo-img">
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#friday-schooling" class="nav-link">Friday Schooling</a></li>
+                    <li class="nav-item"><a href="#vision" class="nav-link">Our Vision</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="enroll.html" class="nav-link">Enroll Now</a></li>
+                    <li class="nav-item"><a href="#footer_ff" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <main>
-      <div class="hero-content">
-        <h1>Empowering Young Innovators</h1>
-        <p>Equipping the next generation with cutting-edge AI, robotics, and machine learning—transforming curious minds into the visionary architects of our technological future.</p>
-        <p>Be the first to know when we launch.</p>
-        
-        <!-- <div class="countdown">
-          <div class="countdown-item">
-            <span id="days">0</span>
-            <span class="countdown-label">Days</span>
-          </div>
-          <div class="countdown-item">
-            <span id="hours">0</span>
-            <span class="countdown-label">Hours</span>
-          </div>
-          <div class="countdown-item">
-            <span id="minutes">0</span>
-            <span class="countdown-label">Minutes</span>
-          </div>
-          <div class="countdown-item">
-            <span id="seconds">0</span>
-            <span class="countdown-label">Seconds</span>
-          </div>
-        </div> -->
-
-        <div class="subscription-form">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0NJpvEBQxIgRlBr5MOmFhR6RE7v_OdO48cpkw3NSKiOcY6Q/viewform" target="_blank" class="notify-link">
-            <div class="form-group">
-              <input type="email" placeholder="Enter your email address" readonly />
-              <span class="notify-text">Notify Me</span>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-text">Weekend Learning Revolution</span>
+                    <div class="badge-pulse"></div>
+                </div>
+                <h1 class="hero-title">
+                    <span class="playful-word word-creating">Creating</span> 
+                    <span class="playful-word word-tomorrows">Tomorrow's</span> 
+                    <span class="playful-word word-innovators">Innovators</span>
+                </h1>
+                <p class="hero-subtitle">Where kids become the architects of Bangladesh's tech future through hands-on learning every Friday!</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('about')">Discover More</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('friday-schooling')">Friday Learning</button>
+                </div>
             </div>
-          </a>
+            <div class="hero-artwork">
+                <div class="artwork-container">
+                    <div class="artwork-glow"></div>
+                    <img src="Abstract Arts/Asset 2@4x.png" alt="Innovation Abstract Art" class="hero-abstract-art">
+                </div>
+            </div>
         </div>
-      </div>
-    </main>
+    </section>
 
-    <footer>
-      <div class="socials">
-        <a href="https://www.facebook.com/profile.php?id=100083788882235" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.youtube.com/@zontromontro" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-        <a href="#" class="coming-soon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" class="coming-soon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-      </div>
-      <div class="copyright">
-        <p>&copy; 2025 ZontroMontro. All rights reserved.</p>
-      </div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Zontrmontro</h2>
+                <p class="section-subtitle">Empowering young minds with future-ready skills</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <img src="Abstract Arts/Asset 7@4x.png" alt="Creativity" class="card-icon">
+                        <h3>Creative Learning</h3>
+                        <p>Zontrmontro is a creative weekend learning initiative in Bangladesh that empowers school going kids with future-ready skills like robotics, programming, web development, and artificial intelligence.</p>
+                    </div>
+                    <div class="about-card">
+                        <img src="Abstract Arts/Asset 8@4x.png" alt="Innovation" class="card-icon">
+                        <h3>Building Confidence</h3>
+                        <p>Our sessions are designed to spark curiosity, build confidence, and help children become creators of technology. We believe in nurturing young minds for a better tomorrow.</p>
+                    </div>
+                    <div class="about-card">
+                        <img src="Abstract Arts/Asset 9@4x.png" alt="Future" class="card-icon">
+                        <h3>Mission Driven</h3>
+                        <p>Our mission is to build a self-reliant, innovation-driven Bangladesh by nurturing young minds today. We want kids to create robots and innovative products for our country's development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Friday Schooling Section -->
+    <section id="friday-schooling" class="friday-schooling">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Friday Schooling</h2>
+                <p class="section-subtitle">Revolutionary learning that turns Fridays into innovation days</p>
+            </div>
+            <div class="friday-content">
+                <div class="friday-info">
+                    <div class="info-card">
+                        <div class="card-header">
+                            <img src="Abstract Arts/Asset 10@4x.png" alt="Hands-on Learning" class="card-image">
+                            <h3>Hands-On Learning</h3>
+                        </div>
+                        <p>No exams, no lectures! Students engage in hands-on classes covering robotics, programming, AI, game development, and web development.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-header">
+                            <img src="Abstract Arts/Asset 11@4x.png" alt="Creativity" class="card-image">
+                            <h3>Foster Creativity</h3>
+                        </div>
+                        <p>Friday Schooling fosters creativity in a tech-driven space where kids can explore, experiment, and build amazing projects.</p>
+                    </div>
+                </div>
+                <div class="friday-features">
+                    <h3>What Makes Friday Schooling Special?</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">🤖</div>
+                            <span>Robotics</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">💻</div>
+                            <span>Programming</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🧠</div>
+                            <span>Artificial Intelligence</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🎮</div>
+                            <span>Game Development</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🌐</div>
+                            <span>Web Development</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🔬</div>
+                            <span>Innovation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" class="vision">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Vision</h2>
+                <p class="section-subtitle">Building a self-reliant, innovation-driven Bangladesh</p>
+            </div>
+            <div class="vision-content">
+                <div class="vision-cards">
+                    <div class="vision-card">
+                        <div class="vision-number">01</div>
+                        <h3>Reduce Dependency</h3>
+                        <p>Reduce the dependency on foreign products by empowering our youth to create homegrown technologies and innovations like robots and smart devices.</p>
+                    </div>
+                    <div class="vision-card">
+                        <div class="vision-number">02</div>
+                        <h3>Revolutionize Education</h3>
+                        <p>Revolutionize the education system in Bangladesh by introducing "Friday Schooling" for practical, creative, and future-ready learning.</p>
+                    </div>
+                    <div class="vision-card">
+                        <div class="vision-number">03</div>
+                        <h3>Spark Innovation</h3>
+                        <p>To spark curiosity, innovation, and problem-solving abilities in kids, we will provide knowledge that goes beyond traditional textbook education.</p>
+                    </div>
+                </div>
+                <div class="vision-statement">
+                    <blockquote>
+                        "To ignite a generation of young innovators by equipping children with future-ready skills in artificial intelligence, robotics, and machine learning—going far beyond traditional education."
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Join the Revolution</h2>
+                <p class="section-subtitle">Ready to empower your child with future-ready skills?</p>
+                <p class="section-subtitle">Join us every Friday and watch your child become a creator of tomorrow's technology. Let's build a better Bangladesh together!</p>
+            </div>
+                <div class="benefit-cards">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🚀</div>
+                        <h4>Future-Ready Skills</h4>
+                        <p>Master cutting-edge technologies like AI, robotics, and machine learning that will shape tomorrow's world</p>
+                        <div class="benefit-highlight">Next-Gen Learning</div>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🎯</div>
+                        <h4>Hands-On Experience</h4>
+                        <p>No boring lectures! Build real projects, create innovative solutions, and see your ideas come to life</p>
+                        <div class="benefit-highlight">Project-Based</div>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🌟</div>
+                        <h4>Expert Mentorship</h4>
+                        <p>Learn from passionate instructors who guide every step of your innovation journey with personalized attention</p>
+                        <div class="benefit-highlight">Personal Growth</div>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🤝</div>
+                        <h4>Innovation Community</h4>
+                        <p>Join a vibrant community of young innovators, collaborate on exciting projects, and build lasting friendships</p>
+                        <div class="benefit-highlight">Team Spirit</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer_ff" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="Logo/English Logo Png.png" alt="Zontrmontro Logo" class="footer-logo-img">
+                    <p>Empowering young minds with future-ready skills</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#friday-schooling">Friday Schooling</a></li>
+                        <li><a href="#vision">Our Vision</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="enroll.html">Enroll Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p>📍 Dhaka, Bangladesh</p>
+                    <p>📧 info@zontrmontro.com</p>
+                    <p>📞 +880-XXXX-XXXXX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Zontrmontro. All rights reserved. Building tomorrow's innovators today!</p>
+            </div>
+        </div>
     </footer>
-  </div>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 
