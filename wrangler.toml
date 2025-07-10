@@ -3,9 +3,17 @@ main = "workers-site/index.js"
 compatibility_date = "2023-04-23"
 workers_dev = true
 
+# Production environment (default)
 routes = [
   { pattern = "zontromontro.com", custom_domain = true },
   { pattern = "www.zontromontro.com", custom_domain = true }
+]
+
+# Staging environment
+[env.staging]
+name = "zontromontro-landing-staging"
+routes = [
+  { pattern = "staging.zontromontro.com", custom_domain = true }
 ]
 
 [site]
