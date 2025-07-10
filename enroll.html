@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll Now - Zontrmontro</title>
+    <link rel="icon" type="image/png" href="Logo/English Logo Png.png">
+    <link rel="apple-touch-icon" href="Logo/English Logo Png.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="Logo/English Logo Png.png" alt="Zontrmontro Logo" class="logo-img">
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="index.html#friday-schooling" class="nav-link">Friday Schooling</a></li>
+                    <li class="nav-item"><a href="index.html#vision" class="nav-link">Our Vision</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="enroll.html" class="nav-link active">Enroll Now</a></li>
+                    <li class="nav-item"><a href="index.html#footer_ff" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Enroll Hero Section -->
+    <section class="enroll-hero">
+        <div class="enroll-hero-container">
+            <div class="enroll-hero-content">
+                <div class="enroll-hero-badge">
+                    <span class="badge-text">🚀 Join the Innovation Revolution</span>
+                    <div class="badge-pulse"></div>
+                </div>
+                <h1 class="enroll-hero-title">
+                    <span class="enroll-brand">Start Your</span> 
+                    <span class="enroll-highlight">Innovation Journey</span>
+                </h1>
+                <p class="enroll-hero-subtitle">
+                    Ready to empower your child with future-ready skills? Join Zontrmontro's Friday Schooling program and watch them become the creators of tomorrow's technology!
+                </p>
+                <div class="enroll-hero-features">
+                    <div class="feature-point">
+                        <span class="feature-icon">✨</span>
+                        <span>Hands-on Learning Experience</span>
+                    </div>
+                    <div class="feature-point">
+                        <span class="feature-icon">🤖</span>
+                        <span>AI, Robotics & Programming</span>
+                    </div>
+                    <div class="feature-point">
+                        <span class="feature-icon">👨‍🏫</span>
+                        <span>Expert Mentorship</span>
+                    </div>
+                </div>
+            </div>
+            <div class="enroll-hero-artwork">
+                <div class="artwork-container">
+                    <div class="artwork-glow"></div>
+                    <img src="Abstract Arts/Asset 6@4x.png" alt="Enroll Innovation Art" class="enroll-abstract-art">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enrollment Form Section -->
+    <section class="enrollment-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Secure Your Child's Spot</h2>
+                <p class="section-subtitle">Fill out the form below to enroll in our Friday Schooling program</p>
+            </div>
+            
+            <div class="enrollment-content">
+                <div class="enrollment-info">
+                    <div class="info-highlight">
+                        <h3>🎯 Program Details</h3>
+                        <div class="program-details">
+                            <div class="detail-item">
+                                <strong>📅 Schedule:</strong> Every Friday, 2:00 PM - 5:00 PM
+                            </div>
+                            <div class="detail-item">
+                                <strong>👥 Age Groups:</strong> 6-8 years, 9-11 years, 12-14 years, 15+ years
+                            </div>
+                            <div class="detail-item">
+                                <strong>📍 Location:</strong> Dhaka, Bangladesh
+                            </div>
+                            <div class="detail-item">
+                                <strong>💻 Topics:</strong> Robotics, AI, Programming, Web Development
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-highlight">
+                        <h3>💰 Investment</h3>
+                        <div class="price-card">
+                            <div class="price-amount">৳2,500</div>
+                            <div class="price-period">per month</div>
+                            <div class="price-features">
+                                <div class="price-feature">✅ 4 Friday Sessions</div>
+                                <div class="price-feature">✅ All Materials Included</div>
+                                <div class="price-feature">✅ Project Portfolio</div>
+                                <div class="price-feature">✅ Certificate of Completion</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="enrollment-form">
+                    <form id="enrollmentForm" class="enroll-form">
+                        <div class="form-section">
+                            <h4>📝 Child Information</h4>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="childFirstName">First Name *</label>
+                                    <input type="text" id="childFirstName" placeholder="Child's First Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="childLastName">Last Name *</label>
+                                    <input type="text" id="childLastName" placeholder="Child's Last Name" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="childAge">Age Group *</label>
+                                    <select id="childAge" required>
+                                        <option value="">Select Age Group</option>
+                                        <option value="6-8">6-8 years</option>
+                                        <option value="9-11">9-11 years</option>
+                                        <option value="12-14">12-14 years</option>
+                                        <option value="15+">15+ years</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="childSchool">School/Institution</label>
+                                    <input type="text" id="childSchool" placeholder="Current School Name">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h4>👨‍👩‍👧‍👦 Parent/Guardian Information</h4>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="parentName">Parent/Guardian Name *</label>
+                                    <input type="text" id="parentName" placeholder="Full Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="relationship">Relationship *</label>
+                                    <select id="relationship" required>
+                                        <option value="">Select Relationship</option>
+                                        <option value="father">Father</option>
+                                        <option value="mother">Mother</option>
+                                        <option value="guardian">Guardian</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="parentEmail">Email Address *</label>
+                                    <input type="email" id="parentEmail" placeholder="email@example.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="parentPhone">Phone Number *</label>
+                                    <input type="tel" id="parentPhone" placeholder="+880XXXXXXXXX" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h4>🏠 Address Information</h4>
+                            <div class="form-group">
+                                <label for="address">Complete Address *</label>
+                                <textarea id="address" placeholder="House/Flat no, Road, Area, City" rows="3" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h4>🎯 Preferences & Additional Info</h4>
+                            <div class="form-group">
+                                <label for="interests">Child's Interests (Optional)</label>
+                                <textarea id="interests" placeholder="Tell us about your child's interests in technology, coding, robotics, etc." rows="3"></textarea>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" checked>
+                                    <span class="checkmark"></span>
+                                    Subscribe to our newsletter for updates and tips
+                                </label>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="terms" required>
+                                    <span class="checkmark"></span>
+                                    I agree to the <a href="#" class="terms-link">Terms & Conditions</a> and <a href="#" class="terms-link">Privacy Policy</a>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-enroll">
+                                <span class="btn-text">🚀 Enroll My Child</span>
+                                <span class="btn-loading" style="display: none;">Processing...</span>
+                            </button>
+                            <p class="form-note">
+                                💡 After submission, our team will contact you within 24 hours to confirm enrollment details and payment information.
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="enroll-faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Got questions? We've got answers!</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>🤔 What if my child misses a session?</h4>
+                    <p>No worries! We provide recorded sessions and makeup opportunities to ensure your child doesn't miss out on learning.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>💻 Do I need to buy any equipment?</h4>
+                    <p>All equipment, laptops, and materials are provided. Your child just needs to bring their curiosity and enthusiasm!</p>
+                </div>
+                <div class="faq-item">
+                    <h4>👨‍🏫 What's the instructor-to-student ratio?</h4>
+                    <p>We maintain a maximum 1:8 ratio to ensure personalized attention and quality learning for every child.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>🎓 Will my child get a certificate?</h4>
+                    <p>Yes! Upon successful completion of the program, your child will receive a certificate of achievement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="Logo/English Logo Png.png" alt="Zontrmontro Logo" class="footer-logo-img">
+                    <p>Empowering young minds with future-ready skills</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#friday-schooling">Friday Schooling</a></li>
+                        <li><a href="index.html#vision">Our Vision</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="enroll.html">Enroll Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p>📍 Dhaka, Bangladesh</p>
+                    <p>📧 info@zontrmontro.com</p>
+                    <p>📞 +880-XXXX-XXXXX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Zontrmontro. All rights reserved. Building tomorrow's innovators today!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
