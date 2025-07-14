@@ -8,6 +8,54 @@
     <link rel="apple-touch-icon" href="Logo/English Logo Png.png">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .tally-form-section {
+            padding: 2rem 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 70vh;
+        }
+        
+        .tally-form-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .tally-form-wrapper {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+            height: 700px;
+        }
+        
+        .tally-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .tally-form-section {
+                padding: 1rem 0;
+            }
+            
+            .tally-form-container {
+                padding: 0 0.5rem;
+            }
+            
+            .tally-form-wrapper {
+                height: 600px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .tally-form-wrapper {
+                height: 500px;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -74,179 +122,18 @@
         </div>
     </section>
 
-    <!-- Enrollment Form Section -->
-    <section class="enrollment-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Secure Your Child's Spot</h2>
-                <p class="section-subtitle">Fill out the form below to enroll in our Friday Schooling program</p>
-            </div>
-            
-            <div class="enrollment-content">
-                <div class="enrollment-info">
-                    <div class="info-highlight">
-                        <h3>🎯 Program Details</h3>
-                        <div class="program-details">
-                            <div class="detail-item">
-                                <strong>📅 Schedule:</strong> Every Friday, 2:00 PM - 5:00 PM
-                            </div>
-                            <div class="detail-item">
-                                <strong>👥 Age Groups:</strong> 6-8 years, 9-11 years, 12-14 years, 15+ years
-                            </div>
-                            <div class="detail-item">
-                                <strong>📍 Location:</strong> Dhaka, Bangladesh
-                            </div>
-                            <div class="detail-item">
-                                <strong>💻 Topics:</strong> Robotics, AI, Programming, Web Development
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="pricing-highlight">
-                        <h3>💰 Investment</h3>
-                        <div class="price-card">
-                            <div class="price-amount">৳2,500</div>
-                            <div class="price-period">per month</div>
-                            <div class="price-features">
-                                <div class="price-feature">✅ 4 Friday Sessions</div>
-                                <div class="price-feature">✅ All Materials Included</div>
-                                <div class="price-feature">✅ Project Portfolio</div>
-                                <div class="price-feature">✅ Certificate of Completion</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="enrollment-form">
-                    <form id="enrollmentForm" class="enroll-form">
-                        <div class="form-section">
-                            <h4>📝 Child Information</h4>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="childFirstName">First Name *</label>
-                                    <input type="text" id="childFirstName" placeholder="Child's First Name" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="childLastName">Last Name *</label>
-                                    <input type="text" id="childLastName" placeholder="Child's Last Name" required>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="childAge">Age Group *</label>
-                                    <select id="childAge" required>
-                                        <option value="">Select Age Group</option>
-                                        <option value="6-8">6-8 years</option>
-                                        <option value="9-11">9-11 years</option>
-                                        <option value="12-14">12-14 years</option>
-                                        <option value="15+">15+ years</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="childSchool">School/Institution</label>
-                                    <input type="text" id="childSchool" placeholder="Current School Name">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-section">
-                            <h4>👨‍👩‍👧‍👦 Parent/Guardian Information</h4>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="parentName">Parent/Guardian Name *</label>
-                                    <input type="text" id="parentName" placeholder="Full Name" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="relationship">Relationship *</label>
-                                    <select id="relationship" required>
-                                        <option value="">Select Relationship</option>
-                                        <option value="father">Father</option>
-                                        <option value="mother">Mother</option>
-                                        <option value="guardian">Guardian</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="parentEmail">Email Address *</label>
-                                    <input type="email" id="parentEmail" placeholder="email@example.com" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="parentPhone">Phone Number *</label>
-                                    <input type="tel" id="parentPhone" placeholder="+880XXXXXXXXX" required>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-section">
-                            <h4>🏠 Address Information</h4>
-                            <div class="form-group">
-                                <label for="address">Complete Address *</label>
-                                <textarea id="address" placeholder="House/Flat no, Road, Area, City" rows="3" required></textarea>
-                            </div>
-                        </div>
-
-                        <div class="form-section">
-                            <h4>🎯 Preferences & Additional Info</h4>
-                            <div class="form-group">
-                                <label for="interests">Child's Interests (Optional)</label>
-                                <textarea id="interests" placeholder="Tell us about your child's interests in technology, coding, robotics, etc." rows="3"></textarea>
-                            </div>
-                            <div class="form-group checkbox-group">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" id="newsletter" checked>
-                                    <span class="checkmark"></span>
-                                    Subscribe to our newsletter for updates and tips
-                                </label>
-                            </div>
-                            <div class="form-group checkbox-group">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" id="terms" required>
-                                    <span class="checkmark"></span>
-                                    I agree to the <a href="#" class="terms-link">Terms & Conditions</a> and <a href="#" class="terms-link">Privacy Policy</a>
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="form-actions">
-                            <button type="submit" class="btn btn-primary btn-enroll">
-                                <span class="btn-text">🚀 Enroll My Child</span>
-                                <span class="btn-loading" style="display: none;">Processing...</span>
-                            </button>
-                            <p class="form-note">
-                                💡 After submission, our team will contact you within 24 hours to confirm enrollment details and payment information.
-                            </p>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="enroll-faq">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Frequently Asked Questions</h2>
-                <p class="section-subtitle">Got questions? We've got answers!</p>
-            </div>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h4>🤔 What if my child misses a session?</h4>
-                    <p>No worries! We provide recorded sessions and makeup opportunities to ensure your child doesn't miss out on learning.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>💻 Do I need to buy any equipment?</h4>
-                    <p>All equipment, laptops, and materials are provided. Your child just needs to bring their curiosity and enthusiasm!</p>
-                </div>
-                <div class="faq-item">
-                    <h4>👨‍🏫 What's the instructor-to-student ratio?</h4>
-                    <p>We maintain a maximum 1:8 ratio to ensure personalized attention and quality learning for every child.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>🎓 Will my child get a certificate?</h4>
-                    <p>Yes! Upon successful completion of the program, your child will receive a certificate of achievement.</p>
-                </div>
+    <!-- Tally Form Section -->
+    <section class="tally-form-section">
+        <div class="tally-form-container">
+            <div class="tally-form-wrapper">
+                <iframe 
+                    class="tally-iframe"
+                    src="https://tally.so/r/mReNPQ" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0" 
+                    title="Join the revolution">
+                </iframe>
             </div>
         </div>
     </section>
@@ -285,4 +172,4 @@
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
